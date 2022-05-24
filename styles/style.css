@@ -1,0 +1,105 @@
+*,
+:before,
+:after {
+  box-sizing: border-box;
+  font-family: 'Lato', sans-serif;
+  margin: 0;
+  padding: 0;
+  --black: #000000;
+  --white: #ffffff;
+  --red: #EE3D1B;
+  --pink: #D52047;
+}
+
+
+
+.container {
+  margin: 0 auto;
+  padding: 0 15px;
+  max-width: 1170px;
+}
+
+.header {
+  background-image: linear-gradient(rgba(213, 32, 71, 0.8), rgba(238, 61, 27, 0.8)), url("../images/Rectangle 3.png");
+  background-repeat: no-repeat;
+  max-width: 1400px;
+  height: 782px;
+  margin: 0 auto;
+}
+
+.nav {
+  display: flex;
+  flex-direction: row;
+  color: var(--white);
+  padding: 55px 0 0;
+  justify-content: space-around;
+}
+
+.nav__cloud {
+  display: inline-block;
+  background-image: url("../images/Vector.svg");
+  width: 25px;
+  height: 18px;
+}
+
+.nav__title {
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 18px;
+}
+
+.nav__list{
+  list-style: none;
+  display: flex;
+}
+
+.nav__element {
+  margin: 0 20px;
+  color: var(--white);
+  text-decoration: none;
+}
+
+.nav__element:focus {
+  font-weight: 700;
+}
+
+.nav__buttons-field {
+  display: flex;
+}
+
+.nav__flag {
+  display: inline-block;
+  background-image: url("../images/emojione-flag-for-flag-united-states.png");
+  width: 32px;
+  height: 32px;
+}
+
+.nav__language {
+  line-height: 32px;
+  margin: 0 10px;
+}
+
+.nav__pointer {
+  display: inline-block;
+  background-image: url("../images/Vector2.png");
+  background-repeat: no-repeat;
+  width: 13px;
+  height: 8px;
+  margin: 12px 0 0;
+}
+
+.nav__btn {
+  width: 100px;
+  height: 40px;
+  border: 1px solid #FFFFFF;
+  border-radius: 6px;
+  font-size: 14px;
+  font-weight: 400;
+  text-align: center;
+  background: transparent;
+  text-transform: uppercase;
+  color: var(--white);
+  margin-left: 20px;
+}
+
+
