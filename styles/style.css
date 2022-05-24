@@ -11,6 +11,12 @@
   --pink: #D52047;
 }
 
+h2 {
+  font-size: 36px;
+  line-height: 43px;
+  font-weight: 600;
+}
+
 
 
 .container {
@@ -20,9 +26,10 @@
 }
 
 .header {
-  background-image: linear-gradient(rgba(213, 32, 71, 0.8), rgba(238, 61, 27, 0.8)), url("../images/Rectangle 3.png");
+  background-image: linear-gradient(90deg, rgba(213, 32, 71, 0.8) 0%, rgba(238, 61, 27, 0.8) 100%), url("../images/Rectangle 3.png");
   background-repeat: no-repeat;
-  max-width: 1400px;
+  background-size: cover;
+  background-position: center;
   height: 782px;
   margin: 0 auto;
 }
@@ -132,6 +139,55 @@
   color: #ED4C5C;
   text-transform: uppercase;
   font-size: 14px;
+  margin-top: 50px;
+}
+
+.overview {
+  display: flex;
+  margin-top: 94px;
+  flex-wrap: wrap;
+}
+
+.overview__info {
+  padding: 0 65px;
+  flex-basis: 50%;
+}
+
+.overview__info h2 {
+  margin-top: 46px;
+}
+
+.overview__info p {
+  font-size: 14px;
+  text-align: justify;
+  line-height: 20px;
+  margin-top: 45px;
+}
+
+.overview__info span {
+  display: block;
+  font-size: 14px;
+  color: #ED4C5C;
+  margin-top: 15px;
+}
+
+.overview__pic {
+  border-radius: 15px;
+  display: inline-block;
+}
+
+.PlaySolid {
+  display: block;
+  background-repeat: no-repeat;
+  position: relative;
+  bottom: 190px;
+  left: -30px;
+  background-color: #ED4C5C;
+  background-image: url("../images/PlaySolid(F5B0).png");
+  background-position: center;
+  width: 66px;
+  height: 66px;
+  border-radius: 50%;
 }
 
 
