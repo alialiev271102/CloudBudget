@@ -23,9 +23,9 @@
         <div>
             <ul class="nav__list">
                 <li><a href="#overview" class="nav__element">OVERVIEW</a></li>
-                <li><a href="#" class="nav__element">FEATURES</a></li>
-                <li><a href="#" class="nav__element">TECHNOLOGY</a></li>
-                <li><a href="#" class="nav__element">CONTACT</a></li>
+                <li><a href="#features" class="nav__element">FEATURES</a></li>
+                <li><a href="#technology" class="nav__element">TECHNOLOGY</a></li>
+                <li><a href="#contact" class="nav__element">CONTACT</a></li>
                 <li><a href="#" class="nav__element">Sign up</a></li>
             </ul>
         </div>
@@ -60,7 +60,7 @@
         <span class="PlaySolid"></span>
     </div>
 </div>
-<div class="features-block">
+<div class="features-block" id="features">
     <div class="container">
         <h2 class="features-title">Features</h2>
         <div class="features-block-inner">
@@ -91,7 +91,7 @@
         </div>
     </div>
 </div>
-<div class="technology-block container">
+<div class="technology-block container" id="technology">
     <h2 class="technology-block__title">Technology</h2>
     <div class="technology-block__inner">
         <div class="technology-block__box box1">
@@ -149,6 +149,28 @@
             <img src="images/Video_bg-1.png" alt="Video_bg-1" class="second-bg-pic">
             <img src="images/Video_bg-3.png" alt="Video_bg-3" class="focused-block__main-pic">
         </div>
+    </div>
+</div>
+<div class="contact-block container" id="contact">
+    <div class="contact-block__inner">
+        <h2>Contact</h2>
+        <p>Questions or concerns? Just fill out the form below and our support team will get back to you within 24 hours</p>
+    </div>
+    <div class="form-block">
+        <form class="form">
+            <div>
+                <input type="text" class="firstname" placeholder="First Name">
+                <input type="text" class="lastname" placeholder="Last Name">
+            </div>
+            <input type="text" placeholder="Phone Number">
+            <select name="services" id="services">
+                <option value="chose">Select Service</option>
+                <option value="nice">Some nice service</option>
+                <option value="bad">Some bad service</option>
+                <option value="strange">Some strange service</option>
+            </select>
+            <button type="submit" class="form-btn">Submit Now</button>
+        </form>
     </div>
 </div>
 </body>

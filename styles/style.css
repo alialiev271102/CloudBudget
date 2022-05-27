@@ -312,7 +312,7 @@ h2 {
   display: flex;
   flex-wrap: wrap;
   color: white;
-  padding-top: 100px;
+  padding-top: 125px;
   justify-content: space-between;
 
 }
@@ -369,6 +369,72 @@ h2 {
   bottom: 268px;
 }
 
+.contact-block {
+  min-height: 500px;
+  display: flex;
+  flex-wrap: wrap;
+  padding-top: 117px;
+}
+
+.contact-block__inner {
+  flex-basis: 50%;
+  padding: 0 70px;
+}
+
+.contact-block__inner h2 {
+  font-size: 36px;
+  line-height: 43px;
+  padding-top: 20px;
+  margin-bottom: 50px;
+}
+
+.contact-block__inner p {
+  font-size: 14px;
+  line-height: 140%;
+  text-align: justify;
+}
+
+.form-block {
+  flex-basis: 50%;
+}
+
+.form div{
+  display: flex;
+  justify-content: space-between;
+}
+
+.form input,
+.form select{
+  height: 60px;
+  background: transparent;
+  border: 1px solid #333333;
+  border-radius: 6px;
+  padding: 0 30px;
+  width: 100%;
+  font-size: 16px;
+  line-height: 19px;
+  margin: 15px 0;
+}
+
+.form div input[class="firstname"] {
+  margin: 15px 15px 15px 0;
+}
+
+.form div input[class="lastname"] {
+  margin: 15px 0 15px 15px;
+}
+
+.form-btn {
+  background: #ED4C5C;
+  border: 1.5px solid #ED4C5C;
+  border-radius: 6px;
+  width: 160px;
+  height: 50px;
+  font-size: 14px;
+  line-height: 17px;
+  text-transform: uppercase;
+  color: #FFFFFF;
+}
 
 
 
