@@ -14,14 +14,14 @@
 <body>
 <header class="header">
     <nav class="nav container">
-        <div>
+        <div class="nav__title_block">
             <a href="#" class="nav__title">
-                <span class="nav__cloud"></span>
-                CloudBudget
+                <span class="nav__cloud"></span>CloudBudget
             </a>
         </div>
-        <div>
-            <ul class="nav__list">
+        <button type="button" id="navBtn" class="nav-btn"><span></span></button>
+        <div class="main-nav nav-hidden" id="mainNav">
+            <ul class="nav__list" >
                 <li><a href="#overview" class="nav__element">OVERVIEW</a></li>
                 <li><a href="#features" class="nav__element">FEATURES</a></li>
                 <li><a href="#technology" class="nav__element">TECHNOLOGY</a></li>
@@ -30,9 +30,11 @@
             </ul>
         </div>
         <div class="nav__buttons-field">
-            <span class="nav__flag"></span>
-            <span class="nav__language">EN</span>
-            <span class="nav__pointer"></span>
+            <div class="language_inner">
+                <span class="nav__flag"></span>
+                <span class="nav__language">EN</span>
+                <span class="nav__pointer" id="pointer"></span>
+            </div>
             <button class="nav__btn">Login</button>
         </div>
     </nav>
@@ -154,7 +156,8 @@
 <div class="contact-block container" id="contact">
     <div class="contact-block__inner">
         <h2>Contact</h2>
-        <p>Questions or concerns? Just fill out the form below and our support team will get back to you within 24 hours</p>
+        <p>Questions or concerns? Just fill out the form below and our support team will get back to you within 24
+            hours</p>
     </div>
     <div class="form-block">
         <form class="form">
@@ -173,5 +176,44 @@
         </form>
     </div>
 </div>
+<footer class="footer">
+    <div class="footer__inner container">
+        <div class="box box1">
+            <h4>Address</h4>
+            <p>Pipang Ltd, Griva Digeni,
+                81-83 Jacovides Tower, 1st Floor
+                1090 Picosia USA</p>
+        </div>
+        <div class="box box2">
+            <h4>Services</h4>
+            <p>Overview </p>
+            <p> Features </p>
+            <p> Technology </p>
+            <p> Terms & Conditions </p>
+            <p> Privecy </p>
+        </div>
+        <div class="box box3">
+            <h4>Get in Touch</h4>
+            <p>info@cloudbudget.com</p>
+            <p>+1 844-721-7120</p>
+            <div class="box-3_icons">
+                <img src="images/Vector.png" alt="facebook">
+                <img src="images/feather-linkedin.png" alt="in">
+                <img src="images/Vector-1.png" alt="Twitter">
+            </div>
+        </div>
+        <div class="box box4">
+            <h4>We Support</h4>
+            <div>
+                <img src="images/secure-p-1%201.png" alt="Support">
+            </div>
+        </div>
+    </div>
+    <div class="footer_end container">
+        Copyright 2018 CloudBudget
+    </div>
+</footer>
+
+<script src="js/nav.js"></script>
 </body>
 </html>

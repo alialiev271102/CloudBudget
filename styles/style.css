@@ -34,12 +34,58 @@ h2 {
   margin: 0 auto;
 }
 
+
+
+.main-nav {
+  overflow: hidden;
+  transition: height 2s;
+}
+
+.nav-btn {
+  display: none;
+  position: relative;
+  width: 42px;
+  height: 36px;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.nav-btn span,
+.nav-btn span::before,
+.nav-btn span::after {
+  position: absolute;
+  width: 22px;
+  height: 2px;
+  background: #FFFFFF;
+}
+
+.nav-btn span {
+  top: 50%;
+  left: 50%;
+  display: inline-block;
+  transform: translate(-50%);
+}
+
+.nav-btn span::before {
+  content: "";
+  top: -7px;
+  left: 0;
+}
+
+.nav-btn span::after {
+  content: "";
+  top: 7px;
+  left: 0;
+}
+
 .nav {
   display: flex;
   flex-direction: row;
   color: var(--white);
   padding: 55px 0 0;
   justify-content: space-around;
+  line-height: 40px;
 }
 
 .nav__cloud {
@@ -60,10 +106,11 @@ h2 {
 .nav__list{
   list-style: none;
   display: flex;
+  width: 585px;
 }
 
 .nav__element {
-  margin: 0 20px;
+  margin: 0 18px;
   color: var(--white);
   text-decoration: none;
 }
@@ -76,6 +123,11 @@ h2 {
   display: flex;
 }
 
+.language_inner {
+  display: flex;
+  padding-top: 5px;
+}
+
 .nav__flag {
   display: inline-block;
   background-image: url("../images/emojione-flag-for-flag-united-states.png");
@@ -84,6 +136,7 @@ h2 {
 }
 
 .nav__language {
+  horiz-align: center;
   line-height: 32px;
   margin: 0 10px;
 }
@@ -95,6 +148,7 @@ h2 {
   width: 13px;
   height: 8px;
   margin: 12px 0 0;
+  cursor: pointer;
 }
 
 .nav__btn {
@@ -109,6 +163,36 @@ h2 {
   text-transform: uppercase;
   color: var(--white);
   margin-left: 20px;
+}
+
+@media screen and (max-width: 965px) {
+
+  .nav__title_block {
+    display: none;
+  }
+
+  .nav-btn {
+    display: block;
+  }
+  .nav-hidden {
+    height: 0;
+  }
+
+  .main-nav {
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+
+  .nav__list {
+    flex-direction: column;
+    width: 150px;
+  }
+
+  .nav__element {
+    display: block;
+    margin:0 0 7px;
+  }
 }
 
 .main-block {
@@ -370,7 +454,7 @@ h2 {
 }
 
 .contact-block {
-  min-height: 500px;
+  min-height: 550px;
   display: flex;
   flex-wrap: wrap;
   padding-top: 117px;
@@ -426,7 +510,7 @@ h2 {
 
 .form-btn {
   background: #ED4C5C;
-  border: 1.5px solid #ED4C5C;
+  border: 2px solid #ED4C5C;
   border-radius: 6px;
   width: 160px;
   height: 50px;
@@ -434,9 +518,69 @@ h2 {
   line-height: 17px;
   text-transform: uppercase;
   color: #FFFFFF;
+  margin-top: 15px;
 }
 
 
+.footer {
+  background: #FAFAFA;
+  min-height: 435px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.footer__inner {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  padding-top: 85px;
+  flex-basis: 100%;
+}
+
+.box {
+  flex-basis: 20%;
+}
+
+.box h4 {
+  margin-bottom: 33px;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 22px;
+}
+
+.box p {
+  font-size: 12px;
+  color: #101010;
+}
+
+.box1 p {
+  line-height: 150%;
+  padding-right: 70px;
+}
+
+.box2 p {
+  line-height: 160%;
+}
+
+.box3 p {
+  margin-bottom: 7px;
+}
+
+.box3 div{
+  margin-top: 13px;
+}
+
+.box3 div img {
+  margin-right: 15px;
+}
+
+.footer_end {
+  padding: 0 0 86px 60px;
+  flex-basis: 100%;
+  font-size: 12px;
+  line-height: 14px;
+  align-self: flex-end;
+}
 
 
 
