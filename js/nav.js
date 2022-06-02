@@ -17,5 +17,18 @@ function navToggle() {
     }
 }
 
-navToggle();
+const addLinksScroll = () => {
+    const links = document.getElementsByClassName('nav__element');
+    for (let i = 0; i < links.length; i++) {
+        const link = links[i];
+        link.addEventListener('click', e => {
+            e.preventDefault();
+            const href = link?.href.split('#')[1];
+            const scrollElement = document.getElementById(href);
+            scrollElement.scrollIntoView({behavior: "smooth"})
+        })
+    }
+}
 
+navToggle();
+addLinksScroll();
